@@ -55,6 +55,11 @@
     color: #FCFCFC;
 }
 
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    color: #131313;
+}
+
 .mobile-btn {
     margin: 110px auto 0;
 }
@@ -95,8 +100,4 @@
     .mobile-btn {
         display: none;
     }
-}
-
-.black {
-    color: #131313;
 }
