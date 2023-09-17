@@ -1,0 +1,134 @@
+.advantages {
+    background-color: #84A178;
+    padding: 0 0 80px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 166px;
+}
+
+.advantages-info::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icon1::before {
+    background-image: url(../images/cowicon.png);
+}
+
+.icon2::before {
+    background-image: url(../images/weight.png);
+}
+
+.icon3::before {
+    background-image: url(../images/ice.png);
+}
+
+.advantages-info:not(:last-child) {
+    margin: 0 0 32px;
+}
+
+.advantages-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 230px;
+    color: #fcfcfc;
+}
+
+.advantages-quantity {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    margin: 16px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding: 0 0 204px;
+    }
+
+    .advantages-list {
+        flex-direction: row;
+        padding: 0 44px;
+    }
+
+    .advantages-info {
+        width: calc((100% - 160px)/3);
+        height: 250px;
+    }
+
+    .advantages-info:not(:last-child) {
+        margin: 0 80px 0 0;
+    }
+
+    .advantages-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 152px;
+    }
+
+    .advantages-quantity {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 32px 0 12px 0;
+        text-transform: lowercase;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        padding: 66px 0 178px;
+    }
+
+    .advantages-list {
+        padding: 0;
+    }
+
+    .advantages-info {
+        width: calc((100% - 64px)/3);
+        height: 230px;
+    }
+
+    .advantages-info:not(:last-child) {
+        margin: 0 32px 0 0;
+    }
+
+    .advantages-text {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        width: 100%;
+    }
+
+    .advantages-quantity {
+        font-size: 58px;
+        line-height: 71px;
+        margin: 40px 0 12px;
+    }
+}

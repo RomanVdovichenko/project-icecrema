@@ -14,6 +14,12 @@
     background-position: right bottom;
 }
 
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     min-width: 320px;
     padding-left: 20px;
