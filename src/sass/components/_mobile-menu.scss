@@ -29,6 +29,7 @@
     border: none;
     padding: 0;
     fill: #fff;
+    cursor: pointer;
 }
 
 .mobile-menu {
@@ -46,18 +47,17 @@
 }
 
 .mobile-menu-link {
-    font-family: Montserrat, sans-serif;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: var(--bold-font);
     line-height: 1.22;
     letter-spacing: 0em;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--secondary-color);
 }
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-    color: #131313;
+    color: var(--primary-color);
 }
 
 .mobile-btn {
@@ -67,7 +67,6 @@
 @media (min-width: 480px) {
     .header-modal {
         margin-top: 14px;
-        align-items: flex-start;
     }
 
     .mobile-menu {
@@ -80,10 +79,6 @@
 }
 
 @media (min-width: 768px) {
-    .header-modal {
-        align-items: flex-end;
-    }
-
     .mobile-menu {
         margin-top: 76px;
     }

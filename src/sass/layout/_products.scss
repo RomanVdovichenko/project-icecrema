@@ -1,5 +1,5 @@
 .products {
-    background-image: url(../images/mbgm.jpg);
+    background-image: url(../images/bg/mbgm.jpg);
     background-position: 50% 0;
     background-size: cover;
     padding-bottom: 60px;
@@ -55,8 +55,6 @@
     position: absolute;
     top: 11px;
     border-radius: 50%;
-    // background-position: 50% 0;
-    // background-repeat: no-repeat;
 }
 
 .card-item::after {
@@ -152,7 +150,7 @@
 
 @media screen and (min-width: 480px) {
     .products {
-        background-image: url(../images/mbg480.jpg);
+        background-image: url(../images/bg/mbg480.jpg);
         background-position: 50% -10px;
     }
 
@@ -172,7 +170,7 @@
 
 @media screen and (min-width: 768px) {
     .products {
-        background-image: url(../images/tbgt.jpg);
+        background-image: url(../images/bg/tbgt.jpg);
         background-position: 50%;
         background-size: cover;
     }
@@ -222,7 +220,7 @@
 
 @media screen and (min-width: 1200px) {
     .products {
-        background-image: url(../images/dbgd.jpg);
+        background-image: url(../images/bg/dbgd.jpg);
         background-position: 50% 0;
         background-size: cover;
     }

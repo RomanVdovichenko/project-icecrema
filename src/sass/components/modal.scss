@@ -1,0 +1,10 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fon-color);
+    z-index: 999;
+    opacity: 0;
+}

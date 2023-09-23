@@ -2,11 +2,9 @@
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.21;
-    letter-spacing: 0em;
+    line-height: 1.29;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 4px;
     fill: #000;
     color: #000;
@@ -19,11 +17,42 @@
 }
 
 .modal-open-btn:hover {
-    background: #0A8817;
+    background-color: #0A8817;
 }
 
 .modal-open-btn:focus {
     fill: #fff;
     color: #fff;
-    background: #0A8817;
+    background-color: #0A8817;
+}
+
+.bay-now {
+    border: none;
+    border-radius: 10px;
+    background-color: #F8D24E;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    fill: #000;
+    color: #000;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.read-more {
+    border: none;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
 }

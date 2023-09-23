@@ -9,7 +9,7 @@
     justify-content: space-between;
     position: relative;
     height: 403px;
-    background-image: url(../images/pointsm.png);
+    background-image: url(../images/points/pointsm.png);
     background-repeat: no-repeat;
     background-position: right bottom;
 }
@@ -33,13 +33,9 @@
         width: 480px;
     }
 
-    .container-header {
-        align-items: flex-start;
-    }
-
     .container-hero {
         height: 317px;
-        background-image: url(../images/points480.png);
+        background-image: url(../images/points/points480.png);
     }
 }
 
@@ -51,13 +47,15 @@
         padding-right: 32px;
     }
 
-    .container-header {
-        align-items: flex-end;
-    }
-
     .container-hero {
         height: 335px;
-        background-image: url(../images/pointst.png);
+        background-image: url(../images/points/pointst.png);
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
     }
 }
 
@@ -71,6 +69,11 @@
 
     .container-hero {
         height: 546px;
-        background-image: url(../images/pointsd.png);
+        background-image: url(../images/points/pointsd.png);
+    }
+
+    .container-footer {
+        margin-bottom: 60px;
+        align-items: flex-end;
     }
 }
