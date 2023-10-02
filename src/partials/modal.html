@@ -1,14 +1,47 @@
-<div class="modal-container">
-  <div class="container">
-    <button type="button">
-      <svg width="32" height="32">
-        <use href="./images/sprite.svg#icon-close_icon"></use>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <p class="modal-title">Buy now</p>
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg width="12" height="12">
+        <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form>
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
+    <form class="contact-form">
+      <ul class="choice-list list">
+        <li class="choice">
+          <input class="cream-input visually-hidden" type="checkbox" name="ice_cream" id="cream" />
+          <label for="cream" class="cream">ice cream</label>
+        </li>
+        <li class="choice">
+          <input
+            class="coffee-input visually-hidden"
+            type="checkbox"
+            name="ice_coffee"
+            id="coffee"
+          />
+          <label for="coffee" class="coffee">ice coffee</label>
+        </li>
+        <li class="choice">
+          <input class="shake-input visually-hidden" type="checkbox" name="milkshake" id="shake" />
+          <label for="shake" class="shake">milkshake</label>
+        </li>
+      </ul>
+      <input
+        class="contact-form-input"
+        name="user_name"
+        minlength="3"
+        type="text"
+        placeholder="Name"
+        required
+      />
+      <input class="contact-form-input" name="user_phone" type="tel" placeholder="Phone" required />
+      <textarea
+        class="contact-form-message"
+        rows="3"
+        name="user_message"
+        placeholder="Comment"
+      ></textarea>
+      <button class="submit-btn" type="submit">Submit</button>
     </form>
   </div>
 </div>

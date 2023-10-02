@@ -49,6 +49,12 @@
     height: 34px;
     border-radius: 50%;
     background-color: #F8D24E;
+    fill: #84A178;
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: #fcfcfc;
 }
 
 .footer-contact {
