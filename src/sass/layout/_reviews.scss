@@ -1,0 +1,116 @@
+.reviews {
+    padding-bottom: 60px;
+    background-image: url(../images/bg/gallery-bgm.jpg);
+    background-size: cover;
+    background-position: 0 -178px;
+}
+
+.customer {
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
+}
+
+.customer-img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.reviews-text {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fcfcfc;
+    background-color: var(--fon-color);
+    border-radius: 10px;
+    padding: 35px 40px;
+    width: 280px;
+    margin: 32px auto;
+}
+
+.client {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+}
+
+.marker-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.marker:first-child {
+    background-color: var(--fon-color);
+}
+
+.marker:not(:last-child) {
+    margin-right: 18px;
+}
+
+@media (min-width: 480px) {
+    .reviews {
+        background-image: url(../images/bg/gallery-bg480.jpg);
+        background-position: 0 -240px;
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews {
+        padding-bottom: 80px;
+        background-image: url(../images/bg/gallery-bgt.jpg);
+        background-position: 0 -283px;
+    }
+
+    .reviews-text {
+        width: 705px;
+        border-radius: 24px;
+        padding: 28px 80px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+    }
+
+    .client {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+    }
+
+    .marker-list {
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .reviews {
+        padding-bottom: 100px;
+        background-image: url(../images/bg/gallery-bgd.jpg);
+        background-position: 0 -465px;
+    }
+
+    .reviews-text {
+        width: 968px;
+        padding: 43px 74px 41px 73px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+    }
+}

@@ -1,3 +1,13 @@
+.contacts {
+    padding-bottom: 60px;
+    background-image:
+        linear-gradient(0deg, #84A178, #84A178),
+        url(../images/bg/gallery-bgm.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 365px, 0 -700px;
+}
+
 .contacts-list {
     display: flex;
     flex-direction: column;
@@ -6,14 +16,15 @@
 
 .contacts-item {
     width: 280px;
+    border: 1px solid #E1E1E1;
     border-radius: 24px;
-    padding: 40px 32px 24px;
+    padding: 40px 32px 0;
     background-color: #fcfcfc;
     box-shadow: 0px 8px 30px 0px #D414431A;
 }
 
 .contacts-item:not(:last-child) {
-    margin-bottom: 16px;
+    margin: 0 0 16px;
 }
 
 .contacts-title {
@@ -49,6 +60,7 @@
     letter-spacing: 0.04em;
     text-align: left;
     color: #D6936D;
+    display: block;
     margin-top: 8px;
 }
 
@@ -62,6 +74,10 @@
     color: #131313;
 }
 
+.schedule:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .hours {
     font-family: Montserrat;
     font-size: 12px;
@@ -73,16 +89,11 @@
     display: inline-block;
 }
 
-.contacts-tel {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #131313;
+.contacts-box:not(:last-child) {
+    margin-bottom: 6px;
 }
 
+.contacts-tel,
 .contacts-email {
     font-family: Montserrat;
     font-size: 12px;
@@ -95,4 +106,236 @@
 
 .border {
     border-top: 1px solid #E1E1E1;
+    padding: 24px 0;
+}
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-btn {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border-radius: 10px;
+    color: #131313;
+    fill: #131313;
+    background-color: #F8D24E;
+    padding: 12px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-btn:hover {
+    background-color: #0A8817;
+    color: #000;
+    fill: #000;
+}
+
+.location-btn:focus {
+    background-color: #0A8817;
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+.franchise-btn {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #000;
+    fill: #000;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    padding: 12px 55px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-btn:hover {
+    border: 2px solid #0A8817;
+}
+
+.franchise-btn:focus {
+    border: 2px solid #0A8817;
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+@media (min-width: 480px) {
+    .contacts {
+        background-image:
+            linear-gradient(0deg, #84A178, #84A178),
+            url(../images/bg/gallery-bg480.jpg);
+        background-size: cover;
+        background-position: top 365px left, 0 -765px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts {
+        background-image:
+            linear-gradient(0deg, #84A178, #84A178),
+            url(../images/bg/gallery-bgt.jpg);
+        background-position: top 300px left, 0 -715px;
+        padding-bottom: 40px;
+    }
+
+    .contacts-list {
+        flex-direction: row;
+    }
+
+    .contacts-item {
+        width: calc((100% - 32px)/3);
+        padding: 40px 24px 8px;
+    }
+
+    .contacts-item:not(:last-child) {
+        margin: 0 16px 0 0;
+    }
+
+    .contacts-title {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 4px 13px;
+        margin-bottom: 32px;
+    }
+
+    .city {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+
+    .adds {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        margin-top: 12px;
+    }
+
+    .schedule {
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0em;
+    }
+
+    .hours {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+    }
+
+    .border {
+        padding: 32px 0;
+    }
+
+    .contacts-box:not(:last-child) {
+        margin-bottom: 4px;
+    }
+
+    .contacts-tel,
+    .contacts-email {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .btn-list {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .location-btn {
+        margin-top: 0;
+        margin-right: 16px;
+    }
+
+    .franchise-btn {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts {
+        background-image:
+            linear-gradient(0deg, #84A178, #84A178),
+            url(../images/bg/gallery-bgd.jpg);
+        background-position: top 125px left, 0 -930px;
+        padding-bottom: 120px;
+    }
+
+    .contacts-item {
+        width: calc((100% - 64px)/3);
+        padding: 40px 40px 8px;
+    }
+
+    .contacts-item:not(:last-child) {
+        margin: 0 32px 0 0;
+    }
+
+    .contacts-title {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 4px 14px;
+    }
+
+    .city {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .adds {
+        font-size: 16px;
+        line-height: 29px;
+        margin-top: 8px;
+    }
+
+    .adds:hover {
+        text-decoration: underline;
+    }
+
+    .schedule {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+    }
+
+    .schedule:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .hours {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .contacts-tel,
+    .contacts-email {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+    .btn-list {
+        margin-top: 60px;
+    }
 }
