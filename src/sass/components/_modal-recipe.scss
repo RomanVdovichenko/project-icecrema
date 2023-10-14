@@ -1,0 +1,281 @@
+.modal-recipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 968px;
+    z-index: 100;
+    background: var(--fon-color);
+    transform: scale(1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden-recipe {
+        transform: scale(1.5);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.recipe {
+    position: absolute;
+    background-color: #fcfcfc;
+    width: 280px;
+    height: 968px;
+    padding: 28px 20px 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    transform: translate(-50%, -50%);
+}
+
+.recipe-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    fill: #131313;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.recipe-title {
+    font-family: Seymour One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+}
+
+.recipe-box {
+    position: relative;
+    width: 132px;
+    height: 139px;
+    margin: 20px auto 22px;
+}
+
+.recipe-box::after {
+    content: '';
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+        linear-gradient(0deg, #D9D9D9, #D9D9D9);
+    box-shadow: 0px 5px 20px 0px rgba(10, 136, 23, 0.25);
+}
+
+.recipe-box::before {
+    content: '';
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-image: url(../images/choco-ice.png);
+}
+
+.consist {
+    display: flex;
+    justify-content: center;
+}
+
+.consist-item {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    width: 53px;
+    height: 72px;
+    border-radius: 40px;
+    border: 2px solid #9CBE8F;
+}
+
+.consist-item:not(:last-child) {
+    margin-right: 9px;
+}
+
+.consist-amt {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: rgba(156, 190, 143, 1);
+    border: 2px solid rgba(156, 190, 143, 1);
+    box-shadow: 0px 6px 20px 0px rgba(10, 136, 23, 0.25);
+}
+
+.ingredients {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+    margin-top: 40px;
+}
+
+.ingredients-list {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.ingredients-item {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: #131313;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.consist-input {
+    border: 1px solid #84A178;
+    background-color: rgba(248, 210, 78, 0.1);
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #131313;
+    padding: 11px;
+}
+
+.consist-text {
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    background-color: #F8D24E1A;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 11px;
+    color: #131313;
+}
+
+.consist-btn {
+    background: #F8D24E;
+    border: none;
+    border-radius: 10px;
+    margin: 24px auto 0;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131313;
+    padding: 12px 34px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.consist-btn:hover {
+    background-color: #0A8817;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-recipe {
+        height: 996px;
+    }
+
+    .recipe {
+        width: 568px;
+        height: 996px;
+        padding: 32px 40px;
+    }
+
+    .recipe-close-btn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .recipe-box {
+        margin: 24px auto;
+    }
+
+    .consist-item {
+        width: 65px;
+        height: 90px;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 14px;
+    }
+
+    .consist-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .consist-amt {
+        width: 53px;
+        height: 53px;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .ingredients {
+        margin-top: 48px;
+    }
+
+    .ingredients-list {
+        margin-bottom: 48px;
+    }
+
+    .consist-form {
+        width: 368px;
+        margin: 0 auto;
+    }
+
+    .consist-input,
+    .consist-text {
+        padding: 11px 16px;
+    }
+
+    .consist-btn {
+        margin: 32px auto 0;
+    }
+}

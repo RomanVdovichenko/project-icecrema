@@ -24,7 +24,7 @@
     width: 280px;
     height: 996px;
     padding: 28px;
-    top: 40%;
+    top: 50%;
     left: 50%;
     border-radius: 10px;
     border: 2px solid #F8D24E;
@@ -236,6 +236,7 @@
     color: #131313;
     text-align: center;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover {
@@ -247,6 +248,7 @@
         width: 568px;
         height: 630px;
         padding: 32px 54px;
+        top: 40%;
     }
 
     .modal-close-btn {

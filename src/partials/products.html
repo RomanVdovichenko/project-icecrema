@@ -12,7 +12,7 @@
               stabilizer
             </p>
           </div>
-          <button class="card-btn" type="button">
+          <button class="card-btn" type="button" data-choco-open>
             <svg width="40" height="16">
               <use href="images/sprite.svg#icon-arrow"></use>
             </svg>
@@ -28,7 +28,7 @@
               preservatives and flavor enhancers
             </p>
           </div>
-          <button class="card-btn" type="button">
+          <button class="card-btn" type="button" data-coffee-open>
             <svg width="40" height="16">
               <use href="images/sprite.svg#icon-arrow"></use>
             </svg>
@@ -44,7 +44,7 @@
               and other sweets of your choice
             </p>
           </div>
-          <button class="card-btn" type="button">
+          <button class="card-btn" type="button" data-shake-open>
             <svg width="40" height="16">
               <use href="images/sprite.svg#icon-arrow"></use>
             </svg>
@@ -52,5 +52,63 @@
         </div>
       </li>
     </ul>
+  </div>
+  <div class="modal-recipe is-hidden-recipe" data-recipe>
+    <div class="recipe">
+      <button class="recipe-close-btn" type="button" data-recipe-close>
+        <svg width="12" height="12">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="recipe-title">Chololate icecream</p>
+      <div class="recipe-box">
+        <!-- <img class="recipe-img" src="images/choco-ice.png" alt="chocolate icecrema" /> -->
+      </div>
+      <ul class="consist list">
+        <li class="consist-item">
+          <p class="consist-amt">320</p>
+          kcal
+        </li>
+        <li class="consist-item">
+          <p class="consist-amt">4g</p>
+          Prote...
+        </li>
+        <li class="consist-item">
+          <p class="consist-amt">8,2g</p>
+          Fats
+        </li>
+        <li class="consist-item">
+          <p class="consist-amt">40,4g</p>
+          Carbs
+        </li>
+      </ul>
+      <p class="ingredients">Ingredients</p>
+      <ul class="ingredients-list list">
+        <li class="ingredients-item">Milk <span class="ingredients-amt">100ml</span></li>
+        <li class="ingredients-item">Belgian chocolate <span class="ingredients-amt">20g</span></li>
+        <li class="ingredients-item">Cream <span class="ingredients-amt">150 ml</span></li>
+        <li class="ingredients-item">Cocoa powder <span class="ingredients-amt"> 30g</span></li>
+        <li class="ingredients-item">Sugar <span class="ingredients-amt">40g</span></li>
+        <li class="ingredients-item">Vanilla sugar <span class="ingredients-amt">10g</span></li>
+      </ul>
+      <form class="consist-form">
+        <input
+          class="consist-input"
+          name="user_name"
+          minlength="3"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input class="consist-input" name="user_phone" type="tel" placeholder="Phone" required />
+        <textarea
+          class="consist-text"
+          rows="3"
+          name="user_message"
+          placeholder="Comment"
+        ></textarea>
+        <button class="consist-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
