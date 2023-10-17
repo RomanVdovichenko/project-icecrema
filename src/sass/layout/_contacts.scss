@@ -29,12 +29,11 @@
 
 .contacts-title {
     text-transform: uppercase;
-    background-color: #F8D24E;
+    background-color: var(--accent-color);
     display: inline-block;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     text-align: center;
     padding: 4px 22px;
@@ -45,7 +44,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     letter-spacing: 0.04em;
     text-align: left;
     color: #131313;
@@ -56,7 +55,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     letter-spacing: 0.04em;
     text-align: left;
     color: #D6936D;
@@ -68,7 +67,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     letter-spacing: 0em;
     text-align: left;
     color: #131313;
@@ -82,7 +81,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     letter-spacing: 0em;
     text-align: left;
     color: #ABABAB;
@@ -98,7 +97,7 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 1.58;
     letter-spacing: 0em;
     text-align: left;
     color: #131313;
@@ -119,7 +118,7 @@
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: 0em;
     display: flex;
     align-items: center;
@@ -151,7 +150,7 @@
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: 0em;
     display: flex;
     align-items: center;
@@ -211,35 +210,35 @@
 
     .contacts-title {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 1.38;
         padding: 4px 13px;
         margin-bottom: 32px;
     }
 
     .city {
         font-size: 14px;
-        line-height: 26px;
+        line-height: 1.86;
         margin-bottom: 32px;
     }
 
     .adds {
         font-size: 14px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.71;
         letter-spacing: 0.04em;
         margin-top: 12px;
     }
 
     .schedule {
         font-size: 14px;
-        line-height: 26px;
+        line-height: 1.86;
         letter-spacing: 0em;
     }
 
     .hours {
         font-size: 14px;
         font-weight: 500;
-        line-height: 26px;
+        line-height: 1.86;
         letter-spacing: 0em;
     }
 
@@ -254,7 +253,7 @@
     .contacts-tel,
     .contacts-email {
         font-size: 14px;
-        line-height: 21px;
+        line-height: 1.5;
     }
 
     .btn-list {
@@ -293,18 +292,18 @@
 
     .contacts-title {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 1.38;
         padding: 4px 14px;
     }
 
     .city {
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.88;
     }
 
     .adds {
         font-size: 16px;
-        line-height: 29px;
+        line-height: 1.81;
         margin-top: 8px;
     }
 
@@ -314,7 +313,7 @@
 
     .schedule {
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.88;
         letter-spacing: 0.04em;
     }
 
@@ -324,15 +323,13 @@
 
     .hours {
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.88;
     }
 
     .contacts-tel,
     .contacts-email {
         font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0em;
+        line-height: 1.5;
     }
 
     .btn-list {
