@@ -1,17 +1,45 @@
 <section class="reviews">
   <div class="container">
-    <div class="customer">
-      <img class="customer-img" src="images/customer.jpg" alt="" />
+    <div id="pane-1" class="customer-box is-active">
+      <div class="customer">
+        <img class="customer-img" src="images/customer.jpg" alt="" />
+      </div>
+      <p class="reviews-text">
+        I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+        addition, you have beautiful serving, cozy atmosphere and polite staff.
+      </p>
+      <p class="client">Emily, Los Angeles</p>
     </div>
-    <p class="reviews-text">
-      I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
-      addition, you have beautiful serving, cozy atmosphere and polite staff.
-    </p>
-    <p class="client">Emily, Los Angeles</p>
+    <div id="pane-2" class="customer-box">
+      <div class="customer">
+        <img class="customer-img" src="images/customer-1.jpg" alt="" />
+      </div>
+      <p class="reviews-text">
+        Every day we come to you with friends after classes in college. We love your ice cream and
+        casual atmosphere!
+      </p>
+      <p class="client">Bryan, New-York</p>
+    </div>
+    <div id="pane-3" class="customer-box">
+      <div class="customer">
+        <img class="customer-img" src="images/customer-2.jpg" alt="" />
+      </div>
+      <p class="reviews-text">
+        Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
+        excellent service - always served politely and quickly!
+      </p>
+      <p class="client">Diana, Chicago</p>
+    </div>
     <ul class="marker-list list">
-      <li class="marker"></li>
-      <li class="marker"></li>
-      <li class="marker"></li>
+      <li class="marker">
+        <button class="marker-btn" data-id="pane-1" type="button"></button>
+      </li>
+      <li class="marker">
+        <button class="marker-btn" data-id="pane-2" type="button"></button>
+      </li>
+      <li class="marker">
+        <button class="marker-btn" data-id="pane-3" type="button"></button>
+      </li>
     </ul>
   </div>
 </section>
