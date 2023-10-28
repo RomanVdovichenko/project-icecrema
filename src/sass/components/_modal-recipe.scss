@@ -177,8 +177,11 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    color: #131313;
     padding: 11px;
+}
+
+.consist-input::placeholder {
+    color: #131313;
 }
 
 .consist-text {
@@ -193,6 +196,9 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 11px;
+}
+
+.consist-text::placeholder {
     color: #131313;
 }
 
